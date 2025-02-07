@@ -1,0 +1,19 @@
+// You are given an array arr[] of non-negative integers. Your task is to move all the zeros in the array to the right end
+// while maintaining the relative order of the non-zero elements
+
+class Solution {
+    void pushZerosToEnd(int[] arr) {
+        // code here
+        int n=arr.length,count=0,temp;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]!=0)
+            {
+                temp=arr[i];
+                arr[i]=arr[count];
+                arr[count]=temp;
+                count++;
+            }
+        }
+    }
+}
