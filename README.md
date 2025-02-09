@@ -157,4 +157,4 @@ The GeeksforGeeks 160 Days of Problem Solving Challenge is designed to enhance y
 
 ---
 
-This structure provides a comprehensive roadmap of the topics and problems you'll encounter during the 160-day challenge. Each problem is carefully selected to build your proficiency in various aspects of DSA.
+This structure provides a comprehensive roadmap of the topics and problems you'll encounter during the 160-day challenge. Each problem is carefully selected to build your proficiency in various aspects of DSA In detailed
