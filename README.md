@@ -1,4 +1,4 @@
-The GeeksforGeeks 160 Days of Problem Solving Challenge is designed to enhance your Data Structures and Algorithms (DSA) skills through daily problem-solving. Each day focuses on a specific topic, providing a curated problem to solve. Below is a structured overview of the challenge, organized by topic and day:
+The GeeksforGeeks 160 Days of Problem Solving Challenge is designed to enhance your Data Structures and Algorithms (DSA) skills through daily problem-solving. Each day focuses on a specific topic, providing a curated problem to solve. Below is a structured overview of the challenge, organized by topic and day :-
 
 **Table of Contents**
 
