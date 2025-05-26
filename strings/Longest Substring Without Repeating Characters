@@ -1,0 +1,24 @@
+import java.util.HashSet;
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        HashSet<Character> set = new HashSet<>();
+        int maxLength = 0;
+        int left = 0; // Left pointer for sliding window
+
+        for (int right = 0; right < s.length(); right++) {
+            char currentChar = s.charAt(right);
+
+            // If character already exists, shrink window from left
+            while (set.contains(currentChar)) {
+                set.remove(s.charAt(left));
+                left++;
+            }
+
+            set.add(currentChar); // Add new character
+            maxLength = Math.max(maxLength, right - left + 1); // Update max length
+        }
+
+        return maxLength;
+    }
+}
