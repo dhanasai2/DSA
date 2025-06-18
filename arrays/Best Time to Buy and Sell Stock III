@@ -1,0 +1,17 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        int buy1  = Integer.MIN_VALUE; // best balance after 1st buy
+        int sell1 = 0;                 // best profit after 1st sell
+        int buy2  = Integer.MIN_VALUE; // best balance after 2nd buy
+        int sell2 = 0;                 // best profit after 2nd sell
+
+        for (int price : prices) {
+            // Order matters: update in reverse transaction order
+            sell2 = Math.max(sell2, buy2 + price);   // finish 2nd sell
+            buy2  = Math.max(buy2, sell1 - price);   // make 2nd buy
+            sell1 = Math.max(sell1, buy1 + price);   // finish 1st sell
+            buy1  = Math.max(buy1, -price);          // make 1st buy
+        }
+        return sell2; // profit after at most two transactions
+    }
+}
