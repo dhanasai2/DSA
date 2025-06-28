@@ -2,7 +2,7 @@
 
 Welcome to my **Data Structures and Algorithms (DSA)** repository using **Java**!
 
-This is a personal archive where I will regularly upload and organize my Java-based DSA solutions. It's aimed at improving my problem-solving skills and preparing for technical interviews.
+This is a personal archive where I will regularly upload and organize my Java-based DSA solutions. It's aimed at improving my problem-solving skills and preparing for technical interviews .
 
 ---
 
