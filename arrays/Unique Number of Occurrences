@@ -1,0 +1,34 @@
+class Solution {
+    public boolean uniqueOccurrences(int[] arr) {
+        Set<Integer> element = new HashSet<>();
+        Set<Integer> counts = new HashSet<>();
+        boolean result=true;
+        int ind=0,count=0;
+        for(int num:arr)
+        {
+            if(!element.contains(num))
+            {
+                element.add(num);
+                count=0;
+                for(int i=ind;i<arr.length;i++)
+                {
+                    if(arr[i]==num)
+                    {
+                        count++;
+                    }
+                }
+                if(counts.contains(count))
+                {
+                    return false;
+                }
+                else 
+                {
+                    counts.add(count);
+                }
+            }
+        }
+
+
+       return result;
+    }
+}
